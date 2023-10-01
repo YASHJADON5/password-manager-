@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+</head>
+<body>
+    <div>
+        <h1>Password Generator</h1>
+        
+            <div class="display-container">
+            <input readonly placeholder="Password"  data-passwordDisplay>
+            <button>
+                
+                <button id="copyBtn">
+                 <span id="Password"></span>
+                <img src="https://images.unsplash.com/photo-1695754190419-bedddd21ccb3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyNHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60" alt="" height="23px" width="23px"></button>
+            </div>
+
+            <div>
+            <div class="input">
+                  <p>Password Length</p>
+                   <p id="len">10</p>
+             </div>
+            <input type="range" min="1" max="20" step="1" class="slider">
+            
+            <div class="checkbox">
+              <div>
+             <input type="checkbox" id="uppercase">
+             <label for="uppercase" >Includes Upper case Letters</label>
+              </div>
+
+            <div>
+                <input type="checkbox" id="lowercase">
+                <label for="lowercase" >Includes lower case Letters</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="numbers">
+                <label for="numbers" >Includes Numbers</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="symbol">
+                <label for="symbols" >Includes symbols</label>
+            </div>
+
+            </div>
+
+         <!-- strength container -->
+        <div class="strength-conatiner">
+            <p>Strength</p>
+            <div class="cirlce"></div>
+        </div>
+
+        <!-- generate password -->
+         <button id="generate-password">
+            Generate Password
+         </button>           
+
+            </div>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
